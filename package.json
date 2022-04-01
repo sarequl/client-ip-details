@@ -1,0 +1,13 @@
+{
+	"name": "@sarequl/client-ip-details",
+	"version": "1.0.0",
+	"description": "You can detect requested client full ip details by this package. (isp, organization, location, residential/data center, proxy, etc)",
+	"main": "index.js",
+	"repository": "https://github.com/sarequl/client-ip-details.git",
+	"author": "sarequl",
+	"license": "MIT",
+	"dependencies": {
+		"node-fetch": "2.0",
+		"request-ip": "^2.1.3"
+	}
+}
