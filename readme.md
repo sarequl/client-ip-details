@@ -1,5 +1,19 @@
 # requested client ip details
 
+### Install the package
+
+NPM
+
+```bash
+npm install @sarequl/client-ip-details
+```
+
+Yarn
+
+```
+yarn add @sarequl/client-ip-details
+```
+
 ### example
 
 ```js
