@@ -13,7 +13,7 @@ const ipDetect = req => {
 
 const ipDetails = async ip => {
 	try {
-		const url = `http://ip-api.com/json/${ip}`;
+		const url = `http://ip-api.com/json/${ip}?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query`;
 		const response = await fetch(url);
 		const data = response.json();
 		return data;
@@ -27,4 +27,8 @@ const getIpDetails = req => {
 	const ip = ipDetect(req);
 	return ipDetails(ip);
 };
-module.exports = { getIpDetails };
+
+const getCustomIpDetails = async ip => {
+	return ipDetails(ip);
+};
+module.exports = { getIpDetails, getCustomIpDetails };
